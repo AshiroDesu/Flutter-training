@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Form',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        //changed from blue to green
+        primarySwatch: Colors.green,
       ),
       home: const SurdoDIO(),
     );
