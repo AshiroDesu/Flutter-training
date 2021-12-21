@@ -1,3 +1,6 @@
+import 'package:cookbook_flutter_form/mobx_training/home_page.dart';
+
+import 'mobx_training/main_mobx.dart';
 import 'package:flutter/material.dart';
 import 'view_surd.dart';
 
@@ -17,7 +20,8 @@ class MyApp extends StatelessWidget {
         //changed from blue to green
         primarySwatch: Colors.green,
       ),
-      home: const SurdoDIO(),
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
