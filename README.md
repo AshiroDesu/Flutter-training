@@ -38,6 +38,7 @@ Para codificar o projeto, siga o modelo de arquitetura MVC, para manter o padrã
 estabelecido nos arquivos. Nessa estruturação, as operações envolvendo a API que
 armazena os dados, são feitas através da classe de controle, a UI é implementada
 na classe de view, e os modelos são feitos dentro da classe de model.
+É necessário ter conhecimento de Flutter, MVC, Mobx, SQLite e realizar Testes.
 ```
 
 ## Contribuindo para <cookbook_flutter_form>

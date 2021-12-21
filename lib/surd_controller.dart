@@ -1,11 +1,29 @@
+import 'package:cookbook_flutter_form/surd_create_repository.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 import 'evento_model.dart';
 
+class Controller extends ChangeNotifier {
+  final SurdRepository repository;
+  Controller(this.repository);
+  late String name;
+  late int amount;
+
+  void getName(int id) {
+    name = repository.getName(id);
+    notifyListeners();
+  }
+
+  void getAmount() async {
+    amount = repository.getAmount();
+    notifyListeners();
+  }
+}
+
 class SurdController {
   final Evento evento;
-  
+
   SurdController(this.evento);
   TextEditingController controller = TextEditingController();
   final keyForm = GlobalKey<FormState>();
